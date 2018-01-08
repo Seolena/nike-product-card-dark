@@ -1,0 +1,267 @@
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+body, html {
+		height: 100%;
+}
+
+body {
+	/*height: 100%;*/
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	 font-weight: normal;
+	 font-family: Open Sans;
+	 color: #cbcccd;
+	 font-size: 14px;
+	 /*letter-spacing: 0.1px;*/
+	 /*посмотреть почему всё съезжает если увеличить отступ летер-спэйсинг*/
+
+
+}
+
+
+
+.card {
+	margin: auto;
+	height: 400px;
+	width: 685px;
+	background-color: #111a28;
+	padding: 20px;
+	
+	font-size: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: 10px;
+	box-shadow: 0 0 40px 20px rgba(0,0,0,0.35);
+
+
+}
+
+.card__gallery {
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+	font-size: 16px;
+	/*background-color: #777;*/
+	
+	position: relative;
+	
+}
+
+.card__previews {
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	right: 15px;
+	left: 15px;
+
+
+}
+
+.card__preview {
+	width: 14px;
+	height: 14px;
+	
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 1px; 
+	margin-top: 0;
+	border: 3px solid #111a28;
+	/*подумать, как красивее сделать эти кружочки*/
+	
+
+
+
+}
+
+.card__preview--white {
+		background-color: white;
+		
+}
+
+.card__preview--red {
+		background-color: #ed3333;
+		
+}
+
+.card__preview--blue {
+		background-color: #29e3ea;
+		
+		 
+}
+
+
+
+.card__preview--active {
+	background-color: #324053;
+	border: 2px solid #aaa;
+	
+	
+}
+
+.card__preview:hover {
+	/*background-color: #324053;*/
+	border: 2px solid #aaa;
+	cursor: pointer;
+	
+	
+}
+
+.card__info {
+	width: 40%;
+	/*padding-top: 35px;*/
+
+	
+	
+	/*vertical-align: center;*/
+
+	display: inline-block;
+	font-size: 16px;
+	/*background-color: #aaa;*/
+}
+
+.card__logo {
+/* position: absolute;
+ top: 15px;
+ left: 15px;*/
+}
+
+.card__photo {
+ 	margin-top: 70px;
+ 	margin-left: 10px;   
+
+}
+
+.card__title {
+ font-size: 24px;
+ font-weight: normal;
+ margin-bottom: 14px;
+ margin-top: 14px;
+}
+
+.card__subtitle {
+ 	font-size: 14px;
+ 	 font-weight: normal;
+ 	 margin-bottom: 28px;
+ 	 color: #d1d1d1;
+
+}
+
+
+.card__form {
+	/*background-color: #111a28;*/
+	font-size: 0;
+	width: 100%;
+	margin-bottom: 28px;
+}
+
+.card__select {
+	background-color: #111a28;
+	color: #cbcccd;
+	border: 1px solid #cbcccd;
+	display: inline-block;
+	padding: 9px 12px 9px;
+
+}
+
+.card__select:hover, .card__select:focus, .card__select:active {
+	 outline: none;
+
+
+}
+
+.card__select:first-of-type {
+	margin-right: 3px;
+}
+
+
+
+
+.card__btn {
+	width: 180px;
+	height: 40px;
+	background-color: #202835;
+	color: #cbcccd;
+	border: 1px solid #cbcccd;
+
+
+
+
+}
+
+.card__btn:hover, .card__btn:focus, .card__btn:active {
+	opacity: 0.7;
+	box-shadow: 1px 1px 4px rgba(200,200,200,0.6); 
+	cursor: pointer;
+		 outline: none;
+
+}
+
+
+/*.card__stars {
+	width: calc(24px*5);
+	height: 24px;
+	position: relative;
+	margin-bottom: 28px;
+
+
+}
+
+.card__stars-underlay {
+	height: 100%;
+	background-color: yellow;
+}
+
+.card__stars-overlay  {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url(../img/star-yellow.png);
+		background-size: contain;
+	top: 0;
+} 
+посмотрю позже как сделать */
+
+
+.card__stars {
+	list-style: none;
+
+	
+	margin-bottom: 28px;
+
+
+}
+
+.card__star {
+	display: inline-block;
+}
+
+.fa-star {
+	color: yellow;
+}
+
+.card__stars[data-stars="1"] .card__star:nth-of-type(n+2) i {
+	color: gray;
+}
+.card__stars[data-stars="2"] .card__star:nth-of-type(n+3) i {
+	color: gray;
+}
+.card__stars[data-stars="3"] .card__star:nth-of-type(n+4) i {
+	color: gray;
+}
+.card__stars[data-stars="4"] .card__star:nth-of-type(n+5) i {
+	color: gray;
+}
+
